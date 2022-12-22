@@ -1,21 +1,13 @@
-#include <stdio.h>
-
-
-void alan(int a, int b) {
-    printf("Dikdörtgenin alanı %d\n", a * b);
-}
-
-void cevre(int a, int b) {
-    printf("Dikdörtgenin çevresi %d\n", 2 * (a + b));
-}
-
-int main() {
-    int a, b;
-    printf("Dikdörtgenin uzunluğunu girin: ");
-    scanf("%d", &a);
-    printf("Dikdörtgenin genişliğini girin: ");
-    scanf("%d", &b);
-    alan(a, b);
-    cevre(a, b);
-    return 0;
+#include"stdio.h"
+#define pi 3.1415
+int main(){
+	float area,circum,r;
+	printf("Enter the radius of the circle:");
+	scanf("%f",&r);
+	area=pi*r*r;
+	circum=2*pi*r*r;
+	printf("Area of the circle: %.2f\n",area);
+	printf("Circumference of the circle: %.2f",circum);
+	
+	return 0;
 }
